@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>密码封存</title>
+<script language="javascript" type="text/javascript">
+function check()
+{
+var username = document.all.username.value;
+/*
+下面判断用户输入的用户名从而跳转到特定的页面
+判断如果用户名是hello的话。跳转到aa.asp当然随便什么页面，自己设定好
+*/
+if('123456'==username)
+{
+location='想要跳转的网站';
+}
+else
+{
+//如果输入的不是123456，那么跳转到百度。总之，你说不可以用asp也就是服务器脚本只能弄个客服端了
+location='http://www.baidu.com';
+}
+}
+</script>
+</head>
+<TABLE align=center>
+<br>
+<p align=center><font size="5" color="red" face="楷体_GB2312"><strong>用 户 登 录</strong></font></p>
+<br>
+<center>用户名：
+<input type="text" value="请输入用户名" onFocus="outerHTML='<input name=myText type=Text size=10 maxlength=12 id=username>'">
+<input type="button" name="myButton" value="确定" onClick="check()" >
+</center>
+</TABLE>
+</body>
+</html>
